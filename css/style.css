@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Days+One&family=JetBrains+Mono:wght@400;700;800&family=Kalam&family=Langar&family=Lobster+Two:wght@400;700&family=Orbitron&family=Permanent+Marker&family=Roboto:wght@400;700;900&display=swap');
+
 body {
     background-color: rgb(229, 233, 233);
     margin: 0;
@@ -14,6 +16,7 @@ header {
     z-index: 3;
     right: 0;
     left: 0;
+    font-family: 'Days One', sans-serif;
 }
 
 header a {
