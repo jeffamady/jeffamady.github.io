@@ -1,5 +1,5 @@
 body {
-    background-color: azure;
+    background-color: rgb(229, 233, 233);
     margin: 0;
 }
 
@@ -9,6 +9,11 @@ header {
     justify-content: space-between;
     border-bottom: 0.5px solid grey ;
     margin: 0 70px;
+    background-color: azure;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    left: 0;
 }
 
 header a {
@@ -42,44 +47,49 @@ header a {
 }
 
 .main {
-    /* margin: 0 70px; */
+    margin: 0 70px;
     display: flex;
+    background-color: azure;
+    position: relative;
+    top: 80px;
+}
+.main h3 {
+    font-weight: lighter;
 }
 
 .column {
-    width: 550px;
     display: flex;
     flex-direction: column;
-    margin: 0 70px;
+    margin-right: 70px;
 }
 
 .article {
     border-bottom: solid 0.5px gray;
-    width: 400px;
+    width: 350px;
 }
 
 
-img {
-    width: 100px;
-}
-.img01 {
+
+.img01, .img03, 
+.img05, .img06 {
     width: 250px;
     height: 150px;
 }
-.img02 {
-    width: ;
-    height: ;
-}
-.img03 {
-    width: ;
-    height: ;
+.img02, .img04 {
+    width:250px;
+    height:350px;
 }
 
-.img04 {
-    width:300px;
-    height:400px;
+.img07, .img08,
+.img09 {
+    width: 100px;
+    height: 60px;
 }
-
+.main p {
+    /* padding-right: 80px; */
+    text-align: center;
+    width: 250px;
+}
 
 footer {
     width: 100%;
@@ -89,7 +99,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    z-index: 2;
+    bottom: -80px;
 }
 footer div {
     display: flex;
