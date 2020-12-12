@@ -46,14 +46,14 @@ header a {
     margin: 5px;
 }
 
-.main {
+main {
     margin: 0 70px;
     display: flex;
     background-color: azure;
     position: relative;
     top: 80px;
 }
-.main h3 {
+main h3 {
     font-weight: lighter;
 }
 
@@ -85,7 +85,7 @@ header a {
     width: 100px;
     height: 60px;
 }
-.main p {
+main p {
     /* padding-right: 80px; */
     text-align: center;
     width: 250px;
