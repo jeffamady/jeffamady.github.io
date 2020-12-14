@@ -36,38 +36,36 @@ a {
 header {
     width: 100%;
     height: 130px;
-    background-color: #E0DFD5;
+    /* background-color: #E0DFD5; */
+    background-color: rgb(184, 184, 173);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    
 }
 
-header menu {
-    margin: 0;
-    padding: 0%;
+
+header a{
+    width: 100px;
+    height: 100px;
+
 }
 
-header menu .logo90,.logo180 {
-    display: none;
+header figure {
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+    background-image: url(../images/logo0.svg);
+
 }
 
-header menu:hover .logo90 {
-    display: block;
+header figure:hover {
+    background-image: url(../images/logo90.svg);
+
 }
 
-header menu:hover .logo0, .logo180 {
-    display: none;
-}
-
-header menu:active .logo180 {
-    display: block;
-}
-
-header menu:active .logo90 {
-    display: none;
+header figure:active {
+    background-image: url(../images/logo180.svg);
 }
