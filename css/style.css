@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap');
 
-body ,p{
+body ,p {
     margin: 0;
     padding: 0;
 }
@@ -95,10 +95,15 @@ footer {
 
 }
 
+footer p {
+    margin: 5px;
+}
+
 .copyright {
     width: 20%;
     position: sticky ;
-    bottom :2px;
+    left: 15%;
+    bottom: 5px;
 }
 
 .info {
@@ -106,4 +111,22 @@ footer {
     height: 80px;
     border: 1px solid #F06543;
     margin: 10px;
+}
+
+
+.up {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    
+}
+
+i {
+    color: #F06543;
+ 
 }
