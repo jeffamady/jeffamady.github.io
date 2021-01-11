@@ -4,21 +4,146 @@
 }
 
 body {
-    background-color: azure;
+    background-color: orangered;
     box-sizing: border-box;
 }
 
-/* .container {
+/* para sacar despues */
+
+main img, section img {
+    width: 100%;
+    height: 100%;
+}
+/* fin */
+
+.container {
     width: 100%;
     height: 100vh;
 
     display: grid;
     grid-template-areas: 
         "header header header"
+        "main main main"
         "section1 section2 section3"
         "footer footer footer"
         ;
-} */
+
+    grid-template-rows: 0.3fr 1.2fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: azure;
+
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.logo {
+    position: absolute;
+    left: 0.4rem;
+}
+
+nav {
+    position: absolute;
+    right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+
+    margin-left: 1rem;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: orangered;
+}
+
+main {
+    grid-area: main;
+    background-color: orange;
+
+    width: 100%;
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.main-img {
+    height: 100%;
+    width: 35vw;
+
+    position: absolute;
+    right: 0;
+
+    opacity: 50%;
+}
+
+main h1 {
+    position: absolute;
+    left: 20%;
+    font-size: 3rem;
+    width: 15vw;
+}
+
+section {
+    width: 30vw;
+    height: 40vh;
+}
+
+section img {
+    margin: 0.4rem;
+}
+
+section div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: orangered;
+}
+
+
+
+.section2 {
+    grid-area: section2;
+    background-color: orangered;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: orangered;
+}
+
+footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+}
 
 @media (max-width: 450px ) {
     .container {
