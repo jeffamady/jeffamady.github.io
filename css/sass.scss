@@ -1,20 +1,20 @@
 // colorTemplate
 
-// $bodyColor:#F5E4D7;
-// $headerColor: #2B9EB3;
-// $textColor: #DBD5B5;
-// $mainColor: #fa9298;
-// $footerColor: #44AF69;
-// $sectionColor: #FCAB10;
+$bodyColor:#F5E4D7;
+$headerColor: #2B9EB3;
+$textColor: #DBD5B5;
+$mainColor: #fa9298;
+$footerColor: #44AF69;
+$sectionColor: #FCAB10;
 
 // colorTemplate2
 
-$bodyColor:#3F4045;
-$headerColor: #FFE347;
-$textColor: #6457A6;
-$mainColor: #7D7ABC;
-$footerColor: #EF767A;
-$sectionColor: #23F0C7;
+// $bodyColor:#3F4045;
+// $headerColor: #FFE347;
+// $textColor: #6457A6;
+// $mainColor: #7D7ABC;
+// $footerColor: #EF767A;
+// $sectionColor: #23F0C7;
 
 @mixin posicionar($direccion) {
     display: flex;
