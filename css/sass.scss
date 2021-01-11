@@ -16,10 +16,10 @@ $sectionColor: #FCAB10;
 // $footerColor: #EF767A;
 // $sectionColor: #23F0C7;
 
-@mixin posicionar($direccion) {
+@mixin posicionar($direccion,$jContent) {
     display: flex;
     flex-direction: $direccion;
-    justify-content: center;
+    justify-content: $jContent;
     align-items: center;
 }
 
@@ -133,7 +133,7 @@ body {
     section {
 
         grid-area: section;
-       @include posicionar(row);
+       @include posicionar(row,space-between);
         width: 100%;
         height: 40vh;
         
@@ -178,7 +178,7 @@ body {
             grid-area: social;
             font-size: 2rem;
     
-            @include posicionar(row);
+            @include posicionar(row,center);
 
             i {
                 padding: 0.1rem;
@@ -256,7 +256,7 @@ body {
         section {
             grid-area: section;
             
-            @include posicionar(column);
+            @include posicionar(column,center);
 
             width: 100%;
 
